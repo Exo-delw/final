@@ -1,0 +1,245 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* =========================
+   LIGHT THEME (DEFAULT)
+   ========================= */
+:root {
+  /* Core */
+  --background: #ffffff;
+  --foreground: #000000;
+
+  /* Surfaces */
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+
+  /* Brand */ 
+  --primary: #064028;
+  --primary-foreground: #ffffff;
+  --primary-light: #046307;
+  --secondary: #FAFFBA;
+  --secondary-foreground: #064028;
+
+  /* Accents */
+  --accent: #B8860B;
+  --accent-foreground: #000000;
+  --accent-darker: #AE8631;
+
+  /* States */
+  --muted: #FAFFBA;
+  --muted-foreground: rgba(0, 0, 0, 0.6);
+  --destructive: #b54a35;
+  --destructive-foreground: #ffffff;
+
+  /* UI Elements */
+  --border: #d6e2c8;
+  --input: #d6e2c8;
+  --ring: #046307;
+
+  /* Charts (green → gold spectrum) */
+  --chart-1: #064028;
+  --chart-2: #046307;
+  --chart-3: #B8860B;
+  --chart-4: #AE8631;
+  --chart-5: #6b8f3a;
+
+  /* Sidebar */
+  --sidebar: #FAFFBA;
+  --sidebar-foreground: #000000;
+  --sidebar-primary: #064028;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #B8860B;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #d6e2c8;
+  --sidebar-ring: #046307;
+
+  /* Radius */
+  --radius: 0.25rem;
+
+  /* Shadows */
+  --shadow-x: 0px;
+  --shadow-y: 1px;
+  --shadow-blur: 3px;
+  --shadow-spread: 0px;
+  --shadow-opacity: 0.08;
+  --shadow-color: #000000;
+}
+
+/* =========================
+   DARK THEME
+   ========================= */
+.dark {
+  /* Core */
+  --background: #0e1b14;
+  --foreground: #f4f4f0;
+
+  /* Surfaces */
+  --card: #14261c;
+  --card-foreground: #f4f4f0;
+  --popover: #14261c;
+  --popover-foreground: #f4f4f0;
+
+  /* Brand */
+  --primary: #B8860B;
+  --primary-foreground: #0e1b14;
+  --secondary: #1f3a2a;
+  --secondary-foreground: #f4f4f0;
+
+  /* Accents */
+  --accent: #AE8631;
+  --accent-foreground: #0e1b14;
+
+  /* States */
+  --muted: #1a2f24;
+  --muted-foreground: rgba(244, 244, 240, 0.6);
+  --destructive: #c65a45;
+  --destructive-foreground: #ffffff;
+
+  /* UI Elements */
+  --border: #2c4a39;
+  --input: #2c4a39;
+  --ring: #B8860B;
+
+  /* Charts */
+  --chart-1: #B8860B;
+  --chart-2: #AE8631;
+  --chart-3: #6b8f3a;
+  --chart-4: #046307;
+  --chart-5: #064028;
+
+  /* Sidebar */
+  --sidebar: #101f17;
+  --sidebar-foreground: #f4f4f0;
+  --sidebar-primary: #B8860B;
+  --sidebar-primary-foreground: #0e1b14;
+  --sidebar-accent: #AE8631;
+  --sidebar-accent-foreground: #0e1b14;
+  --sidebar-border: #2c4a39;
+  --sidebar-ring: #B8860B;
+
+  /* Shadows */
+  --shadow-opacity: 0.25;
+  --shadow-color: #000000;
+}
+
+/* =========================
+   THEME BINDINGS
+   ========================= */
+@theme inline {
+  --font-sans: "Libre Baskerville", "Libre Baskerville Fallback";
+  --font-mono: "IBM Plex Mono", "IBM Plex Mono Fallback";
+  --font-serif: "Lora", "Lora Fallback";
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-darker: var(--accent-darker);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* =========================
+   BASE
+   ========================= */
+@layer base {
+  html,
+  body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #046307;
+  }
+  
+    html,h1,h2,h3,h4 {
+      font-family: var(--font-poppins), system-ui, sans-serif;
+    }
+  
+   link, a,p {
+      font-family:  var(--font-lora) , system-ui, sans-serif;
+    }
+    
+  body {
+    position: relative;
+    isolation: isolate;
+    background: var(--background);
+    color: var(--foreground);
+    overflow-x: hidden;
+  }
+
+  /* body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+  } */
+}
+
+/* =========================
+   UTILITIES
+   ========================= */
+@layer utilities {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .digital-display {
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 8px rgba(184, 134, 11, 0.35);
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+
+}

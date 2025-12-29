@@ -1,0 +1,179 @@
+.footer {
+  background-color: #0b3f2a;
+  color: #ffffff;
+  padding: 60px 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.formBox {
+  background-color: #0b3f2a;
+  border-radius: 16px;
+  border: 1px solid #ffffff40;
+  padding: 30px;
+  width: 320px;
+}
+
+.feedback {
+  color: #c8a13d;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.formBox h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.formBox input,
+.formBox textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  background: transparent;
+  border: 1px solid #ffffff80;
+  border-radius: 8px;
+  color: white;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  font-size: 12px;
+  color: #ffffff80; 
+}
+
+.formBox textarea {
+  height: 90px;
+  resize: none;
+}
+
+.formBox button {
+  background-color: #c8961e;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-style: normal;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.privacy {
+  font-size: 12px;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+
+.rightGroup {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px; 
+}
+
+
+.middleColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; 
+}
+
+
+.services h4 {
+  color: #c8a13d;
+  margin-bottom: 16px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.services li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+
+.services li a:hover {
+  color: #c8a13d;
+}
+
+.services li {
+  font-size: 14px;
+}
+
+.info h4 {
+  color: #c8a13d;
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 14px;
+  font-size: 18px;
+}
+
+
+.logoBox {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 140px;
+  height: auto;
+}
+
+
+.copyright {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 40px;
+  opacity: 0.7;
+}
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 1.5rem; 
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  background-color: white; 
+  color: #0b3f2a;
+ 
+  transform: scale(1.1);
+}
+
+
+

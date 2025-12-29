@@ -1,0 +1,25 @@
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Environment Files (Security)
+.env
+.env.local
+.env.production
+
+# Ignore Dependencies
+node_modules/
+vendor/
+
+# Ignore Build Outputs
+.next/
+build/
+dist/
+
+# Ignore sensitive storage keys
+storage/*.key
+
+# Optional: logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

@@ -1,0 +1,179 @@
+import React from "react";
+
+export default function MarketingCommunicationPage() {
+  return (
+    <main className="bg-white text-gray-800 min-h-screen font-sans">
+      {/* HERO SECTION */}
+    <section className="relative py-24 px-4 md:px-20 text-center overflow-hidden">
+  <div className="absolute inset-0">
+    <img
+      src="/marketing.jpeg"
+      
+      className="w-full h-full object-cover blur-[1px] scale-100"
+    />
+   
+    <div className="absolute inset-0 bg-white/70"></div>
+   
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white"></div>
+  </div>
+
+  <div className="relative z-10">
+    <h1 className="text-5xl md:text-6xl font-bold mb-4 tracking-wide text-[#064028]">
+      MARKETING & COMMUNICATION SERVICES
+    </h1>
+
+    <p className="text-2xl md:text-3xl text-gray-700">
+      Strategic Marketing & Communication Solutions in Ethiopia & Africa
+    </p>
+
+    <p className="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+      Professional marketing, branding, digital campaigns, and stakeholder
+      engagement services for businesses, NGOs, and international partners.
+    </p>
+
+    <button className="bg-[#B8860B] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#9d7000] transition-colors">
+      Contact Us Now
+    </button>
+  </div>
+</section>
+
+
+      {/* INTRO SECTION */}
+      <section className="max-w-5xl mx-auto px-4 py-14">
+        <SectionTitle title="" />
+        <p className="mb-4 leading-relaxed text-gray-700 text-lg md:text-xl">
+          We deliver professional marketing and communication services in
+          Ethiopia, supporting businesses, international organizations, NGOs,
+          and development partners to build strong brands, effective campaigns,
+          and meaningful stakeholder engagement.
+        </p>
+        <p className="leading-relaxed text-gray-700 text-lg md:text-xl">
+          Our strategic, data-driven, and creative marketing solutions help
+          organizations increase visibility, influence audiences, mobilize
+          resources, and achieve measurable growth — aligned with international
+          standards and local market insight.
+        </p>
+      </section>
+
+      {/* SERVICES SECTION */}
+      <section className="max-w-6xl mx-auto px-4 py-14">
+        <SectionTitle title="WHAT WE OFFER" />
+        <div className="space-y-20">
+          {services.map((item, i) => (
+            <div
+              key={i}
+              className={`flex flex-col md:flex-row items-center ${
+                i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              }`}
+            >
+              <div
+                className={`md:w-1/3 flex items-center justify-center mb-4 md:mb-0 ${
+                  i % 2 === 0
+                    ? "md:justify-end md:pr-8"
+                    : "md:justify-start md:pl-8"
+                }`}
+              >
+                <div className="flex items-center space-x-4">
+                  {i % 2 === 0 && (
+                    <span className="font-bold text-2xl md:text-3xl text-[#B8860B]">
+                      {i + 1}
+                    </span>
+                  )}
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#064028]">
+                    {item.title}
+                  </h3>
+                  {i % 2 !== 0 && (
+                    <span className="font-bold text-2xl md:text-3xl text-[#B8860B]">
+                      {i + 1}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <div className="md:w-2/3 text-left md:pl-8">
+                <p className="text-gray-500 text-lg md:text-xl leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="max-w-5xl mx-auto px-4 py-14">
+        <SectionTitle title="WHY WORK WITH US" />
+        <ul className="list-inside space-y-4 text-lg md:text-xl">
+          {reasons.map((item, i) => (
+            <li
+              key={i}
+              className="pl-4 border-l-4 border-[#064028] text-gray-700"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className="max-w-5xl mx-auto px-4 py-20 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#064028]">
+          Looking to strengthen your brand, visibility, and impact?
+        </h2>
+        <p className="mb-8 text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
+          Let’s design a marketing and communication strategy that connects your
+          mission with the right audience and delivers measurable results.
+        </p>
+        <button className="bg-[#B8860B] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#9d7000] transition-colors">
+          Contact Us Now
+        </button>
+      </section>
+    </main>
+  );
+}
+
+function SectionTitle({ title }: { title: string }) {
+  return (
+    <div className="mb-10">
+      <h2 className="text-3xl md:text-4xl font-bold tracking-wide text-[#064028]">
+        {title}
+      </h2>
+      <div className="mt-2 h-1 w-24 bg-[#064028] rounded-full" />
+    </div>
+  );
+}
+
+const services = [
+  {
+    title: "Branding & Corporate Communication",
+    desc: "Brand identity development, messaging frameworks, and corporate communication strategies that position organizations clearly and professionally across markets and stakeholders. (Branding services Ethiopia, corporate communication Ethiopia)",
+  },
+  {
+    title: "Digital Marketing & Advertisement",
+    desc: "SEO-optimized digital marketing, content creation, social media management, paid campaigns, website optimization, analytics, and high-quality targeted advertisement production for engagement and conversion. (Digital marketing Ethiopia, online marketing services Ethiopia)",
+  },
+  {
+    title: "Marketing & Sales Campaign Management",
+    desc: "Integrated outreach, product promotion, awareness, and sales activation campaigns designed to achieve business growth and project objectives. (Marketing campaign management Ethiopia, sales marketing services Ethiopia)",
+  },
+  {
+    title: "Events Communication & Promotion",
+    desc: "Strategic communication, visibility, and promotional support for conferences, summits, exhibitions, launches, and public events — combining organic and paid engagement for maximum reach. (Event communication Ethiopia, event marketing services Ethiopia)",
+  },
+  {
+    title: "Fundraising & Resource Mobilization Support",
+    desc: "Fundraising strategy development, donor communication materials, proposal visibility, and digital campaigns to strengthen NGO and institutional resource mobilization. (Fundraising support Ethiopia, NGO communication services)",
+  },
+  {
+    title: "Strategic Communication & Stakeholder Engagement",
+    desc: "Communication strategies that strengthen stakeholder relationships, public trust, advocacy efforts, and institutional reputation across Africa. (Strategic communication Ethiopia, stakeholder engagement services Africa)",
+  },
+];
+
+const reasons = [
+  "Integrated marketing and communication services under one coordinated strategy",
+  "International standards combined with strong local market insight",
+  "Results-driven, data-informed execution with clear KPIs",
+  "Flexible and sector-responsive solutions for businesses, NGOs, and development partners",
+  "Trusted communication partner in Ethiopia & across Africa",
+];
