@@ -32,9 +32,9 @@ export default function TechnologySolutionsPage() {
       NGOs, institutions, and international organizations.
     </p>
 
-    <button className="bg-[#B8860B] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#9d7000] transition-colors">
-      Contact Us Now
-    </button>
+    <button className="bg-[#B8860B] text-white font-bold rounded-[12px] shadow-lg hover:bg-[#9d7000] transition-colors w-[243px] h-[49px]">
+  Get in Touch
+</button>
   </div>
 </section>
 
@@ -124,9 +124,9 @@ export default function TechnologySolutionsPage() {
           Let’s build digital systems that improve performance, scale impact,
           and support your long-term growth.
         </p>
-        <button className="bg-[#B8860B] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#9d7000] transition-colors">
-          Contact Us Now
-        </button>
+        <button className="bg-[#064028] text-white font-bold rounded-[12px] shadow-lg hover:bg-[#9d7000] transition-colors w-[243px] h-[49px]">
+  Get in Touch
+</button>
       </section>
     </main>
   );

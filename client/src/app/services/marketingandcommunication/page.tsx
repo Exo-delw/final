@@ -31,9 +31,9 @@ export default function MarketingCommunicationPage() {
       engagement services for businesses, NGOs, and international partners.
     </p>
 
-    <button className="bg-[#B8860B] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#9d7000] transition-colors">
-      Contact Us Now
-    </button>
+    <button className="bg-[#B8860B] text-white font-bold rounded-[12px] shadow-lg hover:bg-[#9d7000] transition-colors w-[243px] h-[49px]">
+  Get in Touch
+</button>
   </div>
 </section>
 
@@ -124,9 +124,9 @@ export default function MarketingCommunicationPage() {
           Let’s design a marketing and communication strategy that connects your
           mission with the right audience and delivers measurable results.
         </p>
-        <button className="bg-[#B8860B] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#9d7000] transition-colors">
-          Contact Us Now
-        </button>
+        <button className="bg-[#064028] text-white font-bold rounded-[12px] shadow-lg hover:bg-[#9d7000] transition-colors w-[243px] h-[49px]">
+  Get in Touch
+</button>
       </section>
     </main>
   );

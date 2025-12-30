@@ -29,13 +29,13 @@ export default function ConsultingPage() {
             development partners to ensure strategic, compliant, and impact-driven solutions.
           </p>
 
-          <button className="bg-[#B8860B] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#9d7000] transition-colors">
-            Contact Us Now
-          </button>
+          <button className="bg-[#B8860B] text-white font-bold rounded-[12px] shadow-lg hover:bg-[#9d7000] transition-colors w-[243px] h-[49px]">
+  Get in Touch
+</button>
         </div>
       </section>
 
-      {/* INTRO SECTION */}
+   
       <section className="max-w-5xl mx-auto px-4 py-14">
         <SectionTitle title="" />
         <p className="mb-4 leading-relaxed text-gray-700 text-lg md:text-xl">
@@ -50,7 +50,7 @@ export default function ConsultingPage() {
         </p>
       </section>
 
-      {/* SERVICES SECTION */}
+
       <section className="max-w-6xl mx-auto px-4 py-14">
         <SectionTitle title="WHAT WE OFFER" />
         <div className="space-y-20">
@@ -95,7 +95,7 @@ export default function ConsultingPage() {
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
+   
       <section className="max-w-5xl mx-auto px-4 py-14">
         <SectionTitle title="WHY WORK WITH US" />
         <ul className="list-inside space-y-4 text-lg md:text-xl">
@@ -110,7 +110,7 @@ export default function ConsultingPage() {
         </ul>
       </section>
 
-      {/* CTA SECTION */}
+
       <section className="max-w-5xl mx-auto px-4 py-20 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#064028]">
           Looking for practical expert consulting support in Ethiopia?
@@ -119,9 +119,9 @@ export default function ConsultingPage() {
           Let’s design a consulting solution that drives sustainable growth,
           compliance, and impact.
         </p>
-        <button className="bg-[#B8860B] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#9d7000] transition-colors">
-          Contact Us Now
-        </button>
+       <button className="bg-[#064028] text-white font-bold rounded-[12px] shadow-lg hover:bg-[#9d7000] transition-colors w-[243px] h-[49px]">
+  Get in Touch
+</button>
       </section>
     </main>
   );

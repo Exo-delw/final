@@ -3,7 +3,7 @@ import React from "react";
 export default function IncubationPage() {
   return (
     <main className="bg-white text-gray-800 min-h-screen font-sans">
-      {/* HERO SECTION */}
+    
       <section className="relative py-24 px-4 md:px-20 text-center overflow-hidden">
   <div className="absolute inset-0">
     <img
@@ -31,14 +31,13 @@ export default function IncubationPage() {
       partners, and investors from idea stage to fully operational entities.
     </p>
 
-    <button className="bg-[#B8860B] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#9d7000] transition-colors">
-      Contact Us Now
-    </button>
+    <button className="bg-[#B8860B] text-white font-bold rounded-[12px] shadow-lg hover:bg-[#9d7000] transition-colors w-[243px] h-[49px]">
+  Get in Touch
+</button>
   </div>
 </section>
 
 
-      {/* INTRO SECTION */}
       <section className="max-w-5xl mx-auto px-4 py-14">
         <SectionTitle title="" />
         <p className="mb-4 leading-relaxed text-gray-700 text-lg md:text-xl">
@@ -49,7 +48,7 @@ export default function IncubationPage() {
         </p>
       </section>
 
-      {/* SERVICES SECTION */}
+    
       <section className="max-w-6xl mx-auto px-4 py-14">
         <SectionTitle title="WHAT WE OFFER" />
         <div className="space-y-20">
@@ -94,7 +93,7 @@ export default function IncubationPage() {
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
+      
       <section className="max-w-5xl mx-auto px-4 py-14">
         <SectionTitle title="THIS IS WHY YOU SHOULD CHOOSE US" />
         <ul className="list-inside space-y-4 text-lg md:text-xl">
@@ -109,7 +108,7 @@ export default function IncubationPage() {
         </ul>
       </section>
 
-      {/* CTA SECTION */}
+     \
       <section className="max-w-5xl mx-auto px-4 py-20 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#064028]">
           Have an idea, startup, or project to launch in Ethiopia?
@@ -118,9 +117,9 @@ export default function IncubationPage() {
           Let’s build a fully operational organization, ready to grow and create
           impact.
         </p>
-        <button className="bg-[#B8860B] text-white font-bold py-4 px-12 rounded-full shadow-lg hover:bg-[#9d7000] transition-colors">
-          Contact Us Now
-        </button>
+        <button className="bg-[#064028] text-white font-bold rounded-[12px] shadow-lg hover:bg-[#9d7000] transition-colors w-[243px] h-[49px]">
+  Get in Touch
+</button>
       </section>
     </main>
   );
