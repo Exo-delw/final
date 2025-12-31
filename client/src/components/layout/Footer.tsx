@@ -38,6 +38,7 @@ export function Footer() {
                 <li><Link href="/services/academy">Academy</Link></li>
                 <li><Link href="/services/investment">Investment, Business and Social Affairs Consultancy</Link></li>
                 <li><Link href="/services/startupincubation">Startup Incubation</Link></li>
+                <li><Link href="/services/eventmanagement">Event Management</Link> </li>
               </ul>
             </div>
 

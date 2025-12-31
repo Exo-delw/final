@@ -108,18 +108,23 @@ export default function OutsourcingPage() {
         </ul>
       </section>
 
-      <section className="max-w-5xl mx-auto px-4 py-20 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#064028]">
-          Looking for a reliable outsourcing partner in Ethiopia?
-        </h2>
-        <p className="mb-8 text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
-          Let’s design a tailored outsourcing solution that strengthens your
-          operations and delivery capacity.
-        </p>
-        <button className="bg-[#064028] text-white font-bold rounded-[12px] shadow-lg hover:bg-[#9d7000] transition-colors w-[243px] h-[49px]">
-  Get in Touch
-</button>
-      </section>
+      <section className="relative py-24 text-center mb-20">
+  <div 
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+    style={{ backgroundImage: "url('/getintouch.png')" }}
+  />
+  <div className="relative z-10">
+    <h2 className="text-4xl md:text-5xl font-bold text-[#064028] mb-6">
+      Looking for a trusted partner?
+    </h2>
+    <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+      Let’s work together to build efficient operations, sustainable growth, and meaningful impact.
+    </p>
+    <button className="bg-[#064028] text-white font-bold rounded-xl shadow-lg hover:bg-[#9d7000] transition w-[243px] h-[49px]">
+      Get in Touch
+    </button>
+  </div>
+</section>
     </main>
   );
 }
@@ -153,7 +158,7 @@ const services = [
     desc: "System maintenance, user support, infrastructure monitoring, and operational continuity for reliable technology performance.",
   },
   {
-    title: "Project & Community-Based Outsourcing",
+    title: "Project & Community Based Outsourcing",
     desc: "Staffing, coordination, reporting, and implementation support for development and donor-funded projects.",
   },
 ];

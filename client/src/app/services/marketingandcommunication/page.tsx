@@ -3,7 +3,7 @@ import React from "react";
 export default function MarketingCommunicationPage() {
   return (
     <main className="bg-white text-gray-800 min-h-screen font-sans">
-      {/* HERO SECTION */}
+    
     <section className="relative py-24 px-4 md:px-20 text-center overflow-hidden">
   <div className="absolute inset-0">
     <img
@@ -38,7 +38,7 @@ export default function MarketingCommunicationPage() {
 </section>
 
 
-      {/* INTRO SECTION */}
+   
       <section className="max-w-5xl mx-auto px-4 py-14">
         <SectionTitle title="" />
         <p className="mb-4 leading-relaxed text-gray-700 text-lg md:text-xl">
@@ -55,7 +55,7 @@ export default function MarketingCommunicationPage() {
         </p>
       </section>
 
-      {/* SERVICES SECTION */}
+ 
       <section className="max-w-6xl mx-auto px-4 py-14">
         <SectionTitle title="WHAT WE OFFER" />
         <div className="space-y-20">
@@ -100,7 +100,7 @@ export default function MarketingCommunicationPage() {
         </div>
       </section>
 
-      {/* WHY CHOOSE US */}
+     
       <section className="max-w-5xl mx-auto px-4 py-14">
         <SectionTitle title="WHY WORK WITH US" />
         <ul className="list-inside space-y-4 text-lg md:text-xl">
@@ -115,19 +115,23 @@ export default function MarketingCommunicationPage() {
         </ul>
       </section>
 
-      {/* CTA SECTION */}
-      <section className="max-w-5xl mx-auto px-4 py-20 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#064028]">
-          Looking to strengthen your brand, visibility, and impact?
-        </h2>
-        <p className="mb-8 text-gray-600 text-lg md:text-xl max-w-2xl mx-auto">
-          Let’s design a marketing and communication strategy that connects your
-          mission with the right audience and delivers measurable results.
-        </p>
-        <button className="bg-[#064028] text-white font-bold rounded-[12px] shadow-lg hover:bg-[#9d7000] transition-colors w-[243px] h-[49px]">
-  Get in Touch
-</button>
-      </section>
+     <section className="relative py-24 text-center mb-20">
+  <div 
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+    style={{ backgroundImage: "url('/getintouch.png')" }}
+  />
+  <div className="relative z-10">
+    <h2 className="text-4xl md:text-5xl font-bold text-[#064028] mb-6">
+      Looking for a trusted partner?
+    </h2>
+    <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+      Let’s work together to build efficient operations, sustainable growth, and meaningful impact.
+    </p>
+    <button className="bg-[#064028] text-white font-bold rounded-xl shadow-lg hover:bg-[#9d7000] transition w-[243px] h-[49px]">
+      Get in Touch
+    </button>
+  </div>
+</section>
     </main>
   );
 }
